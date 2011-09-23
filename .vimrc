@@ -10,6 +10,7 @@ set hidden
 set hlsearch
 set dir=/home.local/jsheckler/swp
 let mapleader = ","
+set cc=80
 
 set spell
 set spelllang=en_us
