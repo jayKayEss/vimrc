@@ -8,7 +8,7 @@ set ls=2
 set linebreak
 set hidden
 set hlsearch
-set dir=/home.local/jsheckler/swp
+set dir=~/swp
 let mapleader = ","
 set cc=80
 
