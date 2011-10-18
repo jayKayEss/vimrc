@@ -10,7 +10,6 @@ set hidden
 set hlsearch
 set dir=~/swp
 let mapleader = ","
-set cc=80
 
 set spell
 set spelllang=en_us
