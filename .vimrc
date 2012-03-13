@@ -41,3 +41,5 @@ function! VisualHTMLTagWrap()
         normal `<
     endif
 endfunction
+
+:set guifont=Bitstream\ Vera\ Sans\ Mono:h13
