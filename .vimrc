@@ -1,4 +1,6 @@
 filetype plugin on
+set ignorecase
+set smartcase
 set expandtab
 set tabstop=4
 set shiftwidth=4
@@ -41,3 +43,16 @@ function! VisualHTMLTagWrap()
         normal `<
     endif
 endfunction
+
+" Autocompletion tweaks
+
+"set completeopt=longest,menuone
+"inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+"inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+"  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+"inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
+"  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+set wildmenu
+set wildmode=longest,list
+
