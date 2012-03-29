@@ -50,4 +50,8 @@ set wildmode=longest,list
 
 set guifont=Bitstream\ Vera\ Sans\ Mono:h13
 
+let phpcs_conf = expand("~/development/Web/tests/standards/stable-ruleset.xml")
+if filereadable(phpcs_conf)
+    let g:syntastic_phpcs_conf = "--standard=".phpcs_conf
+endif
 
