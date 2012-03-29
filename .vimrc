@@ -1,4 +1,5 @@
-filetype plugin on
+call pathogen#infect()
+filetype plugin indent on
 set ignorecase
 set smartcase
 set expandtab
@@ -48,3 +49,5 @@ set wildmenu
 set wildmode=longest,list
 
 set guifont=Bitstream\ Vera\ Sans\ Mono:h13
+
+
