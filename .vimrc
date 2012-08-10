@@ -55,3 +55,8 @@ if filereadable(phpcs_conf)
     let g:syntastic_phpcs_conf = "--standard=".phpcs_conf
 endif
 
+command! Lint !php -l % 
+command! Blame !git blame % 
+command! Run !php -r 'require "Loader.php"; require $argv[1];' %
+command! Refresh set noconfirm | bufdo e! | set confirm
+
