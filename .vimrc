@@ -60,3 +60,5 @@ command! Blame !git blame %
 command! Run !php -r 'require "Loader.php"; require $argv[1];' %
 command! Refresh set noconfirm | bufdo e! | set confirm
 
+nmap <leader>tb :TagbarToggle<CR>
+
