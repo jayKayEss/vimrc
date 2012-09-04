@@ -11,8 +11,14 @@ set ls=2
 set linebreak
 set hidden
 set hlsearch
-set dir=~/swp
+set dir=~/.vim/swp
 let mapleader = ","
+
+try
+    set undodir=~/.vim/undo
+catch
+    " deal with it
+endtry
 
 set spell
 set spelllang=en_us
@@ -48,7 +54,8 @@ endfunction
 set wildmenu
 set wildmode=longest,list
 
-set guifont=Bitstream\ Vera\ Sans\ Mono:h13
+set guifont="Bitstream Vera Sans Mono:h10"
+colorscheme evening
 
 let phpcs_conf = expand("~/development/Web/tests/standards/stable-ruleset.xml")
 if filereadable(phpcs_conf)
