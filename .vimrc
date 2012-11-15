@@ -54,7 +54,7 @@ endfunction
 set wildmenu
 set wildmode=longest,list
 
-set guifont="Bitstream Vera Sans Mono:h10"
+set gfn=Meslo\ LG\ M\ DZ:h14
 colorscheme evening
 
 let phpcs_conf = expand("~/development/Web/tests/standards/stable-ruleset.xml")
