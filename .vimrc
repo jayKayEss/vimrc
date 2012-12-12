@@ -57,7 +57,7 @@ set wildmode=longest,list
 set gfn=Meslo\ LG\ M\ DZ:h14
 colorscheme evening
 
-let phpcs_conf = expand("~/development/Web/tests/standards/stable-ruleset.xml")
+let phpcs_conf = expand("~/development/Etsyweb/tests/standards/stable-ruleset.xml")
 if filereadable(phpcs_conf)
     let g:syntastic_phpcs_conf = "--standard=".phpcs_conf
 endif
@@ -69,3 +69,5 @@ command! Refresh set noconfirm | bufdo e! | set confirm
 
 nmap <leader>tb :TagbarToggle<CR>
 
+" Copy the link to file / line in github
+command! Share :exe "!share-github -f % -l " . line(".")
