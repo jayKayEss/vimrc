@@ -54,8 +54,10 @@ endfunction
 set wildmenu
 set wildmode=longest,list
 
-set gfn=Meslo\ LG\ M\ DZ:h14
-colorscheme evening
+if has('gui_running')
+    set gfn=Meslo\ LG\ M\ DZ:h14
+    colorscheme evening
+endif
 
 let phpcs_conf = expand("~/development/Etsyweb/tests/standards/stable-ruleset.xml")
 if filereadable(phpcs_conf)
