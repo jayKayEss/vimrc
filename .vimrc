@@ -48,7 +48,8 @@ endfunction
 set wildmenu
 set wildmode=longest,list
 
-set guifont=Bitstream\ Vera\ Sans\ Mono:h13
+set guifont=Meslo\ LG\ L\ DZ:h13
+colo elflord
 
 let phpcs_conf = expand("~/development/Web/tests/standards/stable-ruleset.xml")
 if filereadable(phpcs_conf)
