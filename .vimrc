@@ -11,8 +11,14 @@ set ls=2
 set linebreak
 set hidden
 set hlsearch
-set dir=~/swp
+set dir=~/.vim/swp
 let mapleader = ","
+
+try
+    set undodir=~/.vim/undo
+catch
+    " deal with it
+endtry
 
 set spell
 set spelllang=en_us
@@ -48,11 +54,22 @@ endfunction
 set wildmenu
 set wildmode=longest,list
 
-set guifont=Meslo\ LG\ L\ DZ:h13
-colo elflord
+if has('gui_running')
+    set gfn=Meslo\ LG\ M\ DZ:h14
+    colorscheme evening
+endif
 
-let phpcs_conf = expand("~/development/Web/tests/standards/stable-ruleset.xml")
+let phpcs_conf = expand("~/development/Etsyweb/tests/standards/stable-ruleset.xml")
 if filereadable(phpcs_conf)
     let g:syntastic_phpcs_conf = "--standard=".phpcs_conf
 endif
 
+command! Lint !php -l % 
+command! Blame !git blame % 
+command! Run !php -r 'require "Loader.php"; require $argv[1];' %
+command! Refresh set noconfirm | bufdo e! | set confirm
+
+nmap <leader>tb :TagbarToggle<CR>
+
+" Copy the link to file / line in github
+command! Share :exe "!share-github -f % -l " . line(".")
