@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/jks/Sites/chromatico/css/chromatico'
 let g:netrw_dirhist_2='/Users/jks/Dropbox/work/bulk_edit_mocks'
+let g:netrw_dirhist_3='/home/jsheckler/development/Etsyweb/phplib/Your/Shop/Controller/Listings/BulkEdit'
