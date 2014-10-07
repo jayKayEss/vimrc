@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/jks/Sites/chromatico/css/chromatico'
 let g:netrw_dirhist_2='/Users/jks/Dropbox/work/bulk_edit_mocks'
 let g:netrw_dirhist_3='/home/jsheckler/development/Etsyweb/phplib/Your/Shop/Controller/Listings/BulkEdit'
+let g:netrw_dirhist_4='/Users/jks/Dropbox/work/bulk_edit_mocks'
+let g:netrw_dirhist_5='/Users/jks/Downloads/etsy-whack-a-mole/vendor'
+let g:netrw_dirhist_6='/Users/jks/Downloads/etsy-whack-a-mole'
+let g:netrw_dirhist_7='/Users/jks/Sites/shorten'
