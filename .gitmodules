@@ -4,3 +4,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule "bundle/hound.vim"]
+	path = bundle/hound.vim
+	url = https://github.com/urthbound/hound.vim
