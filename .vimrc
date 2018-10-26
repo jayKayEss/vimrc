@@ -55,7 +55,7 @@ set wildmenu
 set wildmode=longest,list
 
 if has('gui_running')
-    set gfn=Glass\ TTY\ VT220:h18
+    set gfn=Glass\ TTY\ VT220:h20
     colorscheme evening
 endif
 
